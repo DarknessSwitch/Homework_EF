@@ -76,7 +76,7 @@
     <Compile Include="Models\User.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Servises\Reporter.cs" />
+    <Compile Include="Services\Reporter.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
