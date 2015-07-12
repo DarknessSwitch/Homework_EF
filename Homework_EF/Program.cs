@@ -1,4 +1,5 @@
 ﻿using System;
+using Homework_EF.DataAccess;
 using Homework_EF.Servises;
 
 namespace Homework_EF
@@ -8,7 +9,7 @@ namespace Homework_EF
         static void Main(string[] args)
         {
             var reporter = new Reporter();
-            reporter.MakeReport();
+            reporter.MakeReport(new TestingDbContext());
             Console.ReadLine();
         }
     }

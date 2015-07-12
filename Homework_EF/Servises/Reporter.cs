@@ -6,9 +6,9 @@ namespace Homework_EF.Servises
 {
     internal class Reporter
     {
-        public void MakeReport()
+        public void MakeReport(TestingDbContext context)
         {
-            using (var context = new TestingDbContext())
+            using (context)
             {
                 var resultsByUser = context.TestResults.GroupBy(u => u.User, r => r,
                     (k, d) => new {User = k, Result = d});
